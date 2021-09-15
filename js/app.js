@@ -1,4 +1,5 @@
 import * as UI from './interfaz.js'
+import API from './api.js'
 const { formularioBuscar, divMensajes } = UI
 
 formularioBuscar.addEventListener('submit', buscarCancion)
@@ -18,5 +19,9 @@ function buscarCancion(e) {
             divMensajes.textContent = ''
             divMensajes.classList.remove('error')
         }, 3000);
+        return
     }
+    //consultar nuestra API
+    const busqueda = new API(artista, cancion)
+    busqueda.consultarAPI()
 }
