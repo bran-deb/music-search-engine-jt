@@ -1,5 +1,5 @@
 # Music search engine
-> this is a small project of the modern JavaScript course by J. P. De la torre
+> this is a project with modern javascript
 
 ## 💻 Built with
 > - CSS
